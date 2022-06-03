@@ -150,4 +150,124 @@ func TestInsertionSort(t *testing.T) {
 			}
 		})
 	}
+
+}
+
+func TestSelectionSort(t *testing.T) {
+	type args struct {
+		arr []int
+	}
+	tests := []struct {
+		name string
+		args args
+		want []int
+	}{
+		{
+			"case 1",
+			args{[]int{3, 2, 5, 4, 1}},
+			[]int{1, 2, 3, 4, 5},
+		}, {
+			"case 2",
+			args{[]int{90, 56, 102, 300, 70}},
+			[]int{56, 70, 90, 102, 300},
+		},
+	}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			if got := SelectionSort(tt.args.arr); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("SelectionSort() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestQuickSort(t *testing.T) {
+	type args struct {
+		arr []int
+	}
+	tests := []struct {
+		name string
+		args args
+		want []int
+	}{
+		{
+			"case 1",
+			args{[]int{3, 2, 5, 4, 1}},
+			[]int{1, 2, 3, 4, 5},
+		}, {
+			"case 2",
+
+			args{[]int{90, 56, 102, 300, 70}},
+			[]int{56, 70, 90, 102, 300},
+		},
+	}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			if got := QuickSort(tt.args.arr); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("QuickSort() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestMergeSort(t *testing.T) {
+	type args struct {
+		arr []int
+	}
+	tests := []struct {
+		name string
+		args args
+		want []int
+	}{
+		{
+			"case 1",
+			args{[]int{3, 2, 5, 4, 1}},
+			[]int{1, 2, 3, 4, 5},
+		},
+		{
+			"case 2",
+			args{[]int{90, 56, 102, 300, 70}},
+			[]int{56, 70, 90, 102, 300},
+		},
+	}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			if got := MergeSort(tt.args.arr); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("MergeSort() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func Test_merge(t *testing.T) {
+	type args struct {
+		sort  []int
+		sort2 []int
+	}
+	tests := []struct {
+		name string
+		args args
+		want []int
+	}{
+		{
+			"case 1",
+			args{[]int{3, 2, 5, 4, 1}, []int{3, 2, 5, 4, 1}},
+			[]int{3, 2, 3, 2, 5, 4, 1, 5, 4, 1},
+		},
+	}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			if got := merge(tt.args.sort, tt.args.sort2); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("merge() = %v, want %v", got, tt.want)
+			}
+		})
+	}
 }
