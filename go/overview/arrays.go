@@ -58,3 +58,21 @@ func BubbleSort(arr []int) []int {
 
 	return arr
 }
+
+// Insertion Sort
+// In insertion sort, the smallest element is inserted into the sorted array.
+//Time: Worst: O(n^2), Best: O(n)
+//Space: O(1)
+
+func InsertionSort(arr []int) []int {
+
+	for i := 1; i < len(arr); i++ {
+		j := i
+		for j > 0 && arr[j] < arr[j-1] {
+			arr[j], arr[j-1] = arr[j-1], arr[j]
+			j--
+		}
+	}
+
+	return arr
+}

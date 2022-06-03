@@ -121,3 +121,33 @@ func TestBubbleSort(t *testing.T) {
 		})
 	}
 }
+
+func TestInsertionSort(t *testing.T) {
+	type args struct {
+		arr []int
+	}
+	tests := []struct {
+		name string
+		args args
+		want []int
+	}{
+		{
+			"case 1",
+			args{[]int{3, 2, 5, 4, 1}},
+			[]int{1, 2, 3, 4, 5},
+		}, {
+			"case 2",
+			args{[]int{90, 56, 102, 300, 70}},
+			[]int{56, 70, 90, 102, 300},
+		},
+	}
+	for _, tt := range tests {
+		tt := tt
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			if got := InsertionSort(tt.args.arr); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("InsertionSort() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
