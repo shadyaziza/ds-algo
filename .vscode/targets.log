@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun 12 11:35:49 2022
+# Make data base, printed on Sat Jun 18 12:52:08 2022
 
 # Variables
 
@@ -25,7 +25,7 @@ VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
 # environment
 LOCALAPPDATA = C:\Users\Home\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-7134eda2-effc-4d5b-a0fc-23b92201a7d9-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-69760c37-00b2-4bd9-9e38-97cb54f0d88e-sock
 # environment
 VSCODE_CWD = G:\development\source\Microsoft VS Code\Microsoft VS Code
 # environment
@@ -43,7 +43,7 @@ GOPATH = C:\Users\Home\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_5180_KIMEBQMTLDSFFKDM
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9960_FHVIYRXQKMVPGCMD
 # environment
 ONEDRIVECOMMERCIAL = C:\Users\Home\OneDrive - MUST University
 # environment
@@ -61,7 +61,7 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Home\AppData\Roaming\Code\CachedData\4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+VSCODE_CODE_CACHE_PATH = C:\Users\Home\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
 LANG = C
 # default
@@ -94,6 +94,8 @@ MFLAGS = -pqrR
 .SHELLFLAGS := -c
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+POSTGIS_ENABLE_OUTDB_RASTERS = 1
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
 # makefile
@@ -103,7 +105,7 @@ MAKEFILE_LIST :=
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 5180
+VSCODE_PID = 9960
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -123,6 +125,8 @@ HOMEPATH = \Users\Home
 # default
 MAKECMDGOALS := all
 # environment
+PROJ_LIB = C:\Program Files\PostgreSQL\14\share\contrib\postgis-3.2\proj
+# environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
 # environment
 COMSPEC = C:\WINDOWS\system32\cmd.exe
@@ -133,7 +137,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\IBM\SPSS\Statistics\25\JRE\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Calibre2\;C:\Program Files\dotnet\;C:\Program Files\Go\bin;C:\ProgramData\chocolatey\bin;C:\Users\Home\AppData\Local\Microsoft\WindowsApps;G:\development\source\Microsoft VS Code\Microsoft VS Code\bin;G:\development\source\flutter\bin;C:\Users\Home\AppData\Local\Pub\Cache\bin;G:\development\source\android\Sdk;G:\development\source\android\Sdk\platform-tools;;C:\Users\Home\AppData\Roaming\Amazon;C:\Users\Home\go\bin;C:\Program Files\JetBrains\GoLand 2022.1.1\bin;
+PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\IBM\SPSS\Statistics\25\JRE\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Calibre2\;C:\Program Files\dotnet\;C:\Program Files\Go\bin;C:\ProgramData\chocolatey\bin;C:\firebase-tools-instant-win.exe;C:\Users\Home\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Users\Home\AppData\Local\Microsoft\WindowsApps;G:\development\source\Microsoft VS Code\Microsoft VS Code\bin;G:\development\source\flutter\bin;C:\Users\Home\AppData\Local\Pub\Cache\bin;G:\development\source\android\Sdk;G:\development\source\android\Sdk\platform-tools;C:\Users\Home\AppData\Roaming\Amazon;C:\Users\Home\go\bin;C:\Program Files\JetBrains\GoLand 2022.1.1\bin;;C:\Users\Home\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Home\AppData\Roaming\npm
 # environment
 COMPUTERNAME = DESKTOP-5O222N4
 # default
@@ -144,6 +148,8 @@ MAKEFILES :=
 PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 132992550591880763
+# environment
+GDAL_DATA = C:\Program Files\PostgreSQL\14\gdal-data
 # environment
 LOGONSERVER = \\DESKTOP-5O222N4
 # environment
@@ -170,6 +176,8 @@ GNUMAKEFLAGS :=
 OS = Windows_NT
 # makefile
 .DEFAULT_GOAL := 
+# environment
+NVM_HOME = C:\Users\Home\AppData\Roaming\nvm
 # default
 MAKE_VERSION := 4.3
 # environment
@@ -187,6 +195,8 @@ APPDATA = C:\Users\Home\AppData\Roaming
 # environment
 HOMEDRIVE = C:
 # environment
+NVM_SYMLINK = C:\Program Files\nodejs
+# environment
 PROCESSOR_ARCHITECTURE = x86
 # environment
 GOMODCACHE = C:\Users\Home\go\pkg\mod
@@ -201,7 +211,9 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\Home\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\a18b6369ce0d1e609abd404de114203a-1.68.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\a18b6369ce0d1e609abd404de114203a-1.68.1-main-sock
+# environment
+POSTGIS_GDAL_ENABLED_DRIVERS = GTiff PNG JPEG GIF XYZ DTED USGSDEM AAIGrid
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -211,8 +223,7 @@ GOPROXY = https://proxy.golang.org,direct
 # default
 SUFFIXES := 
 # environment
-ALLUSERSPROFILE = C:\ProgramData 
-
+ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
 # default
@@ -222,7 +233,8 @@ PROCESSOR_REVISION = 7100
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
 # variable set hash-table stats:
-# Load=104/1024=10%, Rehash=0, Collisions=10/128=8%
+# Load=110/1024=11%, Rehash=0, Coll 
+isions=10/134=7%
 
 # Pattern-specific Variable Values
 
@@ -295,6 +307,6 @@ GNUmakefile:
 # strcache performance: lookups = 18 / hit rate = 16%
 # hash-table stats:
 # Load=15/8192=0%, Rehash=0, Collisions=0/18=0%
-# Finished Make data base on Sun Jun 12 11:35:49 2022
+# Finished Make data base on Sat Jun 18 12:52:08 2022
 
  
